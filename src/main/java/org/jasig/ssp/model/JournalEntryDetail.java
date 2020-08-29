@@ -80,4 +80,8 @@ public class JournalEntryDetail
 
 		return result;
 	}
+
+	public boolean isUsedForTransition() {
+	    return this.journalStepJournalStepDetail.getJournalStep().isUsedForTransition();
+    }
 }

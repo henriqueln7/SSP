@@ -172,4 +172,8 @@ public class JournalEntry
 
 		return result;
 	}
+
+	public boolean hasJournalStepThatIndicatesTransition() {
+	    return this.journalEntryDetails.stream().anyMatch(JournalEntryDetail::isUsedForTransition);
+    }
 }
